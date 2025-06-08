@@ -1,0 +1,400 @@
+<html>
+    <head>
+        <title>Trabalho 2º Bimestre</title>
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        
+    </head>
+<body id="trocar_img">
+    <div class="item">
+        <nav class="menu">
+            <ul>
+                <li class="inicio">
+                    <i class="fas fa-home"></i>
+                    <span id="inicio">Início</span>
+                </li>
+                <li class="atividade">
+                    <i class="fas fa-tasks"></i>
+                    <span id="atividades">Atividade</span>
+                </li>
+                <li class="autores">
+                    <i class="fas fa-users"></i>
+                    <span id="autores">Autores</span>
+                </li>
+                <li class="informacoes">
+                    <i class="fas fa-info-circle"></i>
+                    <span id="info">Informações</span>
+                </li>
+                <li class="contato">
+                    <i class="fas fa-envelope"></i>
+                    <span id="contato">Contato</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="item" id="conteudo">
+        
+        <div id="home" class="teste1" style="display: flex;">
+            
+            <div class="container">
+                <h1>Bem-Vindo!!! <br><br> Vamos calcular? Hoje planejamos varias atividade que envolvem
+                    cálculos simples com JavaScript.<br><br> Veja e aproveite clicando no Botão Abaixo:</h1>
+                    <button id="atividades_btn">Atividades</button>
+            </div>
+        </div>
+
+        <div id='task' class="teste1" style="display: none;">
+            <div class="container">
+                <h2> Quem bom ver você aqui! <br><br>
+                Vamos agora navegar pelas atividades que disponibilizamos. 
+                Clique nos botões para direcionar a Atividade desejada</h2>                
+                    <button id="btn_atv01">Atividade 01</button>
+                    <button id="btn_atv02">Atividade 02</button>
+                    <button id="btn_atv03">Atividade 03</button>
+                    <button id="btn_atv04">Atividade 04</button>
+                    <button id="btn_atv05">Atividade 05</button>
+                    <button id="btn_atv06">Atividade 06</button>
+                    <button id="btn_atv07">Atividade 07</button>
+                    <button id="btn_atv08">Atividade 08</button>
+                
+            </div>
+        </div>
+        <div id="aut" class="teste1" style="display: none;">
+            <div class="container">
+                <h1> AUTORES <br><br>
+                    Matheus José Freitas<br>
+                    RA: 60005543<br>
+                    Carlos Adriano Gall<br>
+                    RA: 60009648
+                </h1>
+                <button id="contato_btn">Contato</button>
+            </div>
+        </div>
+        <div id="info_info" class="teste1" style="display: none;">
+            <div class="container">
+                <h1> Conceitos e Desafios</h1><br><br>
+
+                <h2>O projeto desenvolvido foi pensado em uma forma interativa e dinâmica para que o usuário
+                    consiga aprender sobre cálculos básicos e fazer as possíveis verificações nas atividades.<br>
+                Utilizamos HTML, CSS e JavaScript para conseguir fazer cálculos, animações em blocos de conteúdo
+                e também navegar nas atividades sem precisar abrir novas guias ou páginas.  </h2>
+                <button id="autores_btn">Autores</button>
+            </div>
+        </div>
+        <div id="contact" class="teste1" style="display: none;">
+            <div class="container">
+                <h1> Contatos<br><br>
+
+                    Matheus José: <a href="https://www.github.com/matheusheberle" target="_blank"><br>GitHub Matheus Heberle</a> <br><br>
+                    Carlos Gall: <a href="https://github.com/CarlosGall615" target="_blank"><br>GitHub Carlos Gall</a>
+
+                    
+                </h1><br><br>
+                <h2> Muito Obrigado por concluir nossa Atividade, até a Próxima!</h2>
+            </div>
+        </div>
+
+        
+        
+        <div id="atv01" style="display: none;" class="teste1">
+            <div class="container">
+                <h1>Encontre o Triângulo</h1>
+
+                <h2>Encontre o Triângulo: Nessa atividade vamos aprender como identificar se nossas medidas
+                    correspondem a um triângulo e definir que tipo ele é (equilátero, isósceles ou  escaleno).<br><br>
+                    Vamos lá, insira as medidas: </h2>
+                
+                <label>Lado A(cm):</label>
+                <input id="tri_x" type="text">
+                <label>Lado B(cm):</label>
+                <input id="tri_y" type="text">
+                <label>Lado C(cm):</label>
+                <input id="tri_z" type="text">
+                <button id="btn_verificar">Verificar</button>
+                <div id="result_triangulos" class="resultado"></div><br><br>
+                <button id="prox_atv01">Continuar para Atividade 02</button>
+                <button id="btn_voltar01">Voltar</button>
+                
+            </div>
+        </div>
+            
+        <div id="atv02" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Calculadora de IMC</h1>
+
+                <h2>Calcule seu IMC: Esta atividade calcula seu Índice de Massa Corporal (IMC) e diz em qual faixa
+                    suas condições de peso estão em relação a tabela da Organização Mundial de Saúde (OMS).<br><br>
+                    Vamos nessa, insira seu Peso e depois sua Altura:</h2><br>
+                
+                <label>Peso(kg):</label>
+                <input id="peso" type="text">
+                <label>Altura(cm):</label>
+                <input id="altura" type="text">
+           
+                <button id="btn_verificar_imc">Calcular IMC</button>
+                <div id="result_imc" class="resultado"></div><br><br>
+                <button id="prox_atv02">Continuar para Atividade 03</button>
+                <button id="btn_voltar02">Voltar</button>
+<table class="tabela-bonita">
+    <tr>
+        <th colspan="2">Classificação do estado nutricional de adultos segundo o índice de massa corporal (IMC)</th>
+    </tr>
+    <tr>
+        <th>IMC</th>
+        <th>Classificação</th>
+    </tr>
+    <tr>
+        <td>Menor que 18.5</td>
+        <td>Abaixo do Peso</td>
+    </tr>
+    <tr>
+        <td>18.5 a 24.9</td>
+        <td>Peso Normal</td>
+    </tr>
+    <tr>
+        <td>25 a 29.9</td>
+        <td>Sobrepeso</td>
+    </tr>
+    <tr>
+        <td>30 a 34.9</td>
+        <td>Obesidade grau 1</td>
+    </tr>
+    <tr>
+        <td>35 a 39.9</td>
+        <td>Obesidade grau 2</td>
+    </tr>
+    <tr>
+        <td>Maior que 40</td>
+        <td>Obesidade grau 3</td>
+    </tr>
+</table>
+
+            </div>
+        </div>
+        
+        <div id="atv03" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Calcular Transferência de Veículo</h1>
+
+                <h2>Nessa atividade vamos calcular o imposto a pagar para fazer a transferência de um Veículo
+                    segundo as taxas correspondentes do DETRAN: <br>
+                    Carros fabricados antes de 1990 (1% de taxa). <br>
+                    Carros fabricados de 1990 em diante (1.5% de taxa).<br><br>
+
+                    Vamos calcular inserindo o Ano de Fabricação e o Valor do carro:
+                </h2><br>
+                <label>Ano/Veículo:</label>
+                <input id="ano_carro" type="text">
+                <label>Tabela FIPE:</label>
+                <input id="fipe_carro" type="text">
+           
+                <button id="btn_verificar_imposto">Calcular Imposto</button>
+                <div id="result_imposto" class="resultado"></div><br><br><br><br>
+                <button id="prox_atv03">Continuar para Atividade 04</button>
+                <button id="btn_voltar03">Voltar</button>
+            </div>
+        </div>
+    
+        <div id="atv04" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Simulando o Reajuste Salarial </h1>
+
+                <h2>Agora vamos fazer uma simulação do reajuste salarial que uma empresa pretende 
+                    fazer aos seus colaboradores de acordo com o seu cargo.
+                </h2>
+                    <table class="tabela-bonita">
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Percentual</th>
+                        </tr>
+                        <tr>
+                            <td>Gerente</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Engenheiro</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Técnico</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Outro</td>
+                            <td>40%</td>
+                        </tr>
+                    </table> 
+                <h2>Insira abaixo o salário base e selecione o Cargo:</h2><br>
+                <label>Salário Base:</label>
+                <input id="salario_base" type="text">
+                <label>Cargo/Função:</label>
+                <select id="cargo">
+                    <option>Selecione o Cargo/Função</option>
+                    <option>Gerente</option>
+                    <option>Engenheiro</option>
+                    <option>Técnico</option>
+                    <option>Outro...</option>
+                </select>
+           
+                <button id="btn_verificar_salario">Calcular Reajuste</button>
+                <div id="result_salario" class="resultado"></div><br><br><br><br>
+                <button id="prox_atv04">Continuar para Atividade 05</button>
+                <button id="btn_voltar04">Voltar</button>
+            </div>
+        </div>
+    
+        <div id="atv05" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Calculando Crédito Bancário</h1>
+
+                <h2> Um Banco pretende conceder crédito especial aos seus clientes de acordo com o saldo
+                    medio do último ano. Como base, disponibilizou a seguinte tabela:
+                </h2>
+                <table class="tabela-bonita">
+                    <tr>
+                        <th>Saldo Médio</th>
+                        <th>Percentual</th>
+                    </tr>
+                    <tr>
+                            <td>De 0 a 200</td>
+                            <td>Nenhum Crédito</td>
+                        </tr>
+                        <tr>
+                            <td>De 201 a 400</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>De 401 a 600</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 600</td>
+                            <td>40%</td>
+                        </tr>
+                </table>
+                <h2> Insira o valor do seu salarial mensal e verifique o crédito disponivel:</h2><br>
+                <label>Salario Mensal (R$):</label>
+                <input id="saldo_medio" type="text">
+            
+                <button id="btn_verificar_credito">Calcular Crédito</button>
+                <div id="result_credito" class="resultado"></div><br><br><br><br>
+                <button id="prox_atv05">Continuar para Atividade 06</button>
+                <button id="btn_voltar05">Voltar</button>
+            </div>
+        </div>
+
+
+        <div id="atv06" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Lanchonete</h1>
+                <h2> Vamos fazer uma pausa e aproveitar para pedir uma lanche?</h2>
+                <table class="tabela-bonita">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Valor(R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Cachorro Quente</td>
+                        <th>11.00</th>
+                    </tr>
+                    <tr>
+                        <td>Bauru</td>
+                        <th>8.50</th>
+                    </tr>
+                    <tr>
+                        <td>Misto Quente</td>
+                        <th>8.00</th>
+                    </tr>
+                    <tr>
+                        <td>Hamburger</td>
+                        <th>9.00</th>
+                    </tr>
+                    <tr>
+                        <td>Cheesburger</td>
+                        <th>10.00</th>
+                    </tr>
+                    <tr>
+                        <td>Refrigerante</td>
+                        <th>4.50</th>
+                    </tr>
+                </table>
+                <h2>Selecione qual lanche você deseja e qual quantidade:</h2>
+                <label>Lanches:</label>
+                <select id="lanchonete">
+                    <option>Esolha seu Lanche</option>
+                    <option>01 - Cachorro Quente</option>
+                    <option>02 - Bauru</option>
+                    <option>03 - Misto Quente</option>
+                    <option>04 - Hamburger</option>
+                    <option>05 - Cheesburger</option>
+                    <option>06 - Refrigerante</option>
+                </select>
+                <button id="btn_mais">+</button><br><br>
+                <label>Quantidade (und):</label>
+                <input id="qtd_lanches" type="number">
+                <button id="btn_menos">-</button>
+                <button id="btn_calcular_lanches">Fazer Pedido</button>
+                <div id="result_lanchonete" class="resultado"></div><br><br>
+                <button id="prox_atv06">Continuar para Atividade 07</button>
+                <button id="btn_voltar06">Voltar</button>
+
+            </div>
+        </div>
+
+        <div id="atv07" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Recebendo um Produto</h1>
+                <h2> A atividade seguinte vamos simular o recebimento de uma produto 
+                    que deverá aplicar desconto ou acréscimo variando com a fomra de pagamento escolhida.
+                </h2>
+                <h2> Digite o Valor da Etiqueta e escolha a fomra de pagamento:</h2><br>
+                <label>Valor a Pagar(R$):</label>
+                <input id="valor_a_pagar" type="text">
+                <select id="loja">
+                    <option>Escolha a Forma de Pagamento</option>
+                    <option>À Vista Dinheiro ou Cheque (10% desconto)</option>
+                    <option>À Vista Cartão de Crédito (15% desconto)</option>
+                    <option>2x sem juros</option>
+                    <option>2x com juros(acréscimo de 10%)</option>
+                </select>
+                <button id="btn_receber">Receber</button>
+                <div id="result_pagamento" class="resultado"></div><br><br><br><br>
+                <button id="prox_atv07">Continuar para Atividade 08</button>
+                <button id="btn_voltar07">Voltar</button>
+
+            </div>
+        </div>
+
+
+        <div id="atv08" class="teste1" style="display: none;">
+            <div class="container">
+                <h1>Simulando o Salário de um Professor</h1>
+                <h2>Para finalizar nossas atividades, vamos calcular o valor do salário que uma escola
+                    paga para um Professor de acordo com seu nível profissionalizante. </h2>
+
+                <h2>Escolha o nível do Professor e digite quantas aulas eles tem na semana:</h2><br><br>
+                <label>Nível:</label>
+                <select id="nivel_prof">
+                    <option>Escolha seu Nível</option>
+                    <option>Nível 1</option>
+                    <option>Nível 2</option>
+                    <option>Nível 3</option>
+                </select>
+                <label>Quantidade de aulas:</label>
+                <input id="qtd_aulas" type="text">            
+                <button id="btn_salaio_prof">Simular Salário</button>
+                <div id="result_salario_prof" class="resultado"></div><br><br><br><br>
+                <button id="prox_atv08">Finalizar</button>
+                <button id="btn_voltar08">Voltar</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+    <script src="script.js"></script>
+</html>
