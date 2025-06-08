@@ -601,19 +601,19 @@ let trocar_img = document.querySelector("#trocar_img");
 
 
 const fundos = {
-  home: { tipo: 'img', valor: 'img/home.jpg' },
-  task: {tipo: 'img', valor: 'img/task.jpg'},
-  aut: {tipo: 'img', valor: 'img/aut.png'},
-  info_info: {tipo: 'img', valor: 'img/info_info.jpg'},
-  contact: {tipo: 'img', valor: 'img/contact.jpg'},
-  atv01: { tipo: 'img', valor: 'img/atv01.png' },
-  atv02: { tipo: 'img', valor: 'img/atv02.jpg' },
-  atv03: { tipo: 'img', valor: 'img/atv03.png' },
-  atv04: { tipo: 'img', valor: 'img/atv04.jpg' },
-  atv05: { tipo: 'img', valor: 'img/atv05.jpg' },
-  atv06: { tipo: 'img', valor: 'img/atv06.png' },
-  atv07: { tipo: 'img', valor: 'img/atv07.png' },
-  atv08: { tipo: 'img', valor: 'img/atv08.jpeg' },
+  home: { tipo: 'img', valor: 'home.jpg' },
+  task: {tipo: 'img', valor: 'task.jpg'},
+  aut: {tipo: 'img', valor: 'aut.png'},
+  info_info: {tipo: 'img', valor: 'info_info.jpg'},
+  contact: {tipo: 'img', valor: 'contact.jpg'},
+  atv01: { tipo: 'img', valor: 'atv01.png' },
+  atv02: { tipo: 'img', valor: 'atv02.jpg' },
+  atv03: { tipo: 'img', valor: 'atv03.png' },
+  atv04: { tipo: 'img', valor: 'atv04.jpg' },
+  atv05: { tipo: 'img', valor: 'atv05.jpg' },
+  atv06: { tipo: 'img', valor: 'atv06.png' },
+  atv07: { tipo: 'img', valor: 'atv07.png' },
+  atv08: { tipo: 'img', valor: 'atv08.jpeg' },
   
 };
 
